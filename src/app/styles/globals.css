@@ -50,6 +50,8 @@
 
   --inset-shadow-a: inset 0 -1px 0 rgb(200, 200, 200);
   --inset-darkShadow-a: inset 0 -1px 0 rgb(59, 59, 59);
+  --shadow-theme-a: 0 -1px 0 rgb(200, 200, 200);
+  --shadow-darkTheme-a: 0 -1px 0 rgb(59, 59, 59);
 }
 
 /* @theme inline {
