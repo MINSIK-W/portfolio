@@ -42,8 +42,6 @@
   --color-textColor: rgb(38, 38, 38);
   --color-borderColor: rgb(150, 150, 150);
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
   --font-noto: 'noto', 'sans-serif';
   --font-roboto: 'roboto', 'serif';
   --font-rajdhani: 'rajdhani', 'serif';
@@ -52,6 +50,21 @@
   --inset-darkShadow-a: inset 0 -1px 0 rgb(59, 59, 59);
   --shadow-theme-a: 0 -1px 0 rgb(200, 200, 200);
   --shadow-darkTheme-a: 0 -1px 0 rgb(59, 59, 59);
+
+  --animate-fall: fall linear;
+  @keyframes fall {
+    0% {
+      opacity: 0;
+      transform: translateY(-100vh);
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
 }
 
 /* @theme inline {
