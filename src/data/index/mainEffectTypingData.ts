@@ -1,7 +1,7 @@
 import { MainEffectTypingItem } from '@/types/mainEffect';
 export const mainEffectTypingData: MainEffectTypingItem[] = [
   {
-    title: 'Wang MINSIK',
+    title: 'WANG MINSIK',
     subTyping: ['WEB PUBLISHER', 'FRONT-END DEVELOPER', 'UI ENGINEER'],
     backgroundTyping: [
       'let x = 2025;',
