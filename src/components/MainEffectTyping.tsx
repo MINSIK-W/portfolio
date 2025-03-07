@@ -44,7 +44,10 @@ export default function MainEffectTyping() {
   }, [blink]);
   return (
     <div>
-      <span className="">{currentText}</span>
+      <span>&nbsp;</span>
+      <span className="text-Green after:animate-blink font-roboto after:bg-Green relative text-2xl after:absolute after:-right-5 after:bottom-1.5 after:inline-block after:h-1 after:w-4">
+        {currentText}
+      </span>
     </div>
   );
 }
