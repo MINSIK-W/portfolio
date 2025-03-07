@@ -1,9 +1,10 @@
-import Image from "next/image";
+'use client';
+import MainEffect from '@/components/MainEffect';
 
 export default function Home() {
   return (
-    <section>
-      
-    </section>
+    <>
+      <MainEffect />
+    </>
   );
 }
