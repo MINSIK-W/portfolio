@@ -1,13 +1,13 @@
 'use client';
-import React, { useState, useEffect, ReactNode } from 'react';
+import React, { useState, useEffect } from 'react';
 
-interface type {
-  children: ReactNode;
+interface DynamicSizeProps {
+  children: React.ReactNode;
   targetHeight: number;
   targetWidth: number;
 }
 
-export default function DynamicSize({ targetHeight, targetWidth, children }: type) {
+export default function DynamicSize({ targetHeight, targetWidth, children }: DynamicSizeProps) {
   const [dynamicHeight, setDynamicHeight] = useState(targetHeight);
   const [dynamicWidth, setDynamicWidth] = useState(targetWidth);
 
