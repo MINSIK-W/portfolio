@@ -46,8 +46,8 @@
   --font-roboto: 'roboto', 'serif';
   --font-rajdhani: 'rajdhani', 'serif';
 
-  --inset-shadow-a: inset 0 -1px 0 rgb(200, 200, 200);
-  --inset-darkShadow-a: inset 0 -1px 0 rgb(59, 59, 59);
+  --inset-shadow-d: inset 0 -1px 0 rgb(59, 59, 59);
+  --inset-shadow-l: inset 0 -1px 0 rgb(200, 200, 200);
   --shadow-theme-a: 0 -1px 0 rgb(200, 200, 200);
   --shadow-darkTheme-a: 0 -1px 0 rgb(59, 59, 59);
 
@@ -65,7 +65,7 @@
       transform: translateY(0);
     }
   }
-  --animate-blink : blink 1s step-end infinite;
+  --animate-blink: blink 1s step-end infinite;
   @keyframes blink {
     from,
     to {
