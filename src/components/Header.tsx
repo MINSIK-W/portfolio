@@ -6,7 +6,7 @@ import Navigation from '@/components/Navigation';
 
 export default function Header() {
   return (
-    <header className="inset-shadow-a dark:inset-darkShadow-a text-textColor dark:text-darkTextColor bg-bgColor dark:bg-darkBgColor relative z-10 flex h-[48px] flex-[0_0_48px] flex-row items-stretch p-3 py-0 select-none">
+    <header className="inset-shadow-l dark:inset-shadow-d text-textColor dark:text-darkTextColor bg-bgColor dark:bg-darkBgColor relative z-10 flex h-[48px] flex-[0_0_48px] flex-row items-stretch p-3 py-0 select-none">
       <div className="relative flex grow-1 flex-row items-center justify-between">
         <Link onClick={() => window.location.reload()} href="/">
           <div className="font-noto group origin-bottom-left text-base font-black duration-300 ease-in hover:after:scale-x-100">
