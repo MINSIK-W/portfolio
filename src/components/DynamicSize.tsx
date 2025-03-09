@@ -8,8 +8,8 @@ interface DynamicSizeProps {
 }
 
 export default function DynamicSize({ targetHeight, targetWidth, children }: DynamicSizeProps) {
-  const [dynamicHeight, setDynamicHeight] = useState(targetHeight);
-  const [dynamicWidth, setDynamicWidth] = useState(targetWidth);
+  const [dynamicHeight, setDynamicHeight] = useState(targetHeight || '');
+  const [dynamicWidth, setDynamicWidth] = useState(targetWidth || '');
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,12 +18,12 @@ export default function DynamicSize({ targetHeight, targetWidth, children }: Dyn
 
       // targetHeight가 0일 경우에는 0으로 설정, 그렇지 않으면 화면 크기에 비례하여 높이 계산
       const newHeight =
-        targetHeight === 0
-          ? 0
+        targetHeight === -1
+          ? 'auto'
           : Math.round(targetHeight + (screenHeight - 1000) * (targetHeight / 1000));
       const newWidth =
-        targetWidth === 0
-          ? 0
+        targetWidth === -1
+          ? 'auto'
           : Math.round(targetWidth + (screenWidth - 1000) * (targetWidth / 1000));
 
       setDynamicHeight(newHeight);
