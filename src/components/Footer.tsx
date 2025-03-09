@@ -7,7 +7,7 @@ import { footerInfoData } from '@/data/index/footerInfoData';
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
   return (
-    <footer className="bg-bgColor dark:bg-darkBgColor shadow-theme-a dark:shadow-darkTheme-a text-textColor dark:text-darkTextColor flex flex-row items-center px-3 py-0 text-xs select-none">
+    <footer className="bg-bgColor dark:bg-darkBgColor shadow-theme-a dark:shadow-darkTheme-a text-textColor dark:text-darkTextColor z-10 flex flex-row items-center px-3 py-0 text-xs select-none">
       {footerInfoData.map((item) => (
         <p key={item.title} className="text-center">
           {item.title}
