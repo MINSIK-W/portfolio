@@ -12,9 +12,9 @@ export default function Hero() {
   return (
     <aside
       // bg-bgColor dark:bg-darkBgColor
-      className={`sticky top-0 left-0 flex flex-col justify-between`}
+      className={`sticky top-0 flex flex-col justify-between`}
     >
-      <div className="flex flex-shrink basis-auto flex-col items-stretch justify-center self-auto overflow-auto p-0">
+      <div className="flex flex-shrink basis-auto flex-col items-stretch justify-center self-auto p-0">
         <div className="mx-4">
           <div className="border-borderColor dark:border-darkBorderColor m-0 mt-8 ml-4 box-border flex w-40 overflow-hidden rounded border">
             <Image
