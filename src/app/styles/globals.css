@@ -48,8 +48,14 @@
 
   --inset-shadow-d: inset 0 -1px 0 rgb(59, 59, 59);
   --inset-shadow-l: inset 0 -1px 0 rgb(200, 200, 200);
+  --inset-shadow-d1: inset -1px 0 0 0 rgb(59, 59, 59);
+  --inset-shadow-l1: inset -1px 0 0 0 rgb(200, 200, 200);
+  --inset-shadow-d2: inset 0 0 0 1px rgb(48, 48, 48);
+  --inset-shadow-l2: inset 0 0 0 1px rgb(220, 220, 220);
+
   --shadow-theme-a: 0 -1px 0 rgb(200, 200, 200);
   --shadow-darkTheme-a: 0 -1px 0 rgb(59, 59, 59);
+  --shadow-theme-t: inset 0 0 0 1px transparent;
 
   --animate-fall: fall linear;
   @keyframes fall {
