@@ -3,4 +3,5 @@ export interface experienceItems {
   date: { start: string; end: string }[];
   job: string;
   work: string;
+  intro: string[];
 }

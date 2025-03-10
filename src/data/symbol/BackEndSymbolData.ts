@@ -1,25 +1,25 @@
-import { SymbolType } from '@/types/symbol';
+import { SymbolItems } from '@/types/symbol';
 import Express from '@/components/ui/symbol/Express';
 import Php from '@/components/ui/symbol/Php';
 import Nodes from '@/components/ui/symbol/Nodes';
 
-export const BackEndSymbolData: SymbolType = {
-  php: {
-    switch: true,
-    title: 'PHP',
-    label: 'Back-end',
-    icon: Php,
-  },
-  node: {
-    switch: true,
-    title: 'Node.js',
-    label: 'Back-end',
-    icon: Nodes,
-  },
-  express: {
-    switch: true,
-    title: 'Express',
-    label: 'Back-end',
-    icon: Express,
+export const BackEndSymbolData: SymbolItems = {
+  label: 'Back-end',
+  items: {
+    php: {
+      show: true,
+      title: 'PHP',
+      icon: Php,
+    },
+    node: {
+      show: true,
+      title: 'Node.js',
+      icon: Nodes,
+    },
+    express: {
+      show: true,
+      title: 'Express',
+      icon: Express,
+    },
   },
 };
