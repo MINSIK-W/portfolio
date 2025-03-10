@@ -1,4 +1,4 @@
-import { MainEffectTypingItem } from '@/types/mainEffect';
+import { MainEffectTypingItem } from '@/types/index';
 export const mainEffectTypingData: MainEffectTypingItem[] = [
   {
     title: 'WANG MINSIK',
