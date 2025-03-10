@@ -1,11 +1,21 @@
 import React from 'react';
 
-interface SymbolItems {
-  switch: boolean;
+export interface SymbolItem {
+  show: boolean;
   title: string;
-  label: string;
   icon: React.ComponentType<any>;
 }
-export type SymbolType = {
-  [key: string]: SymbolItems; // "배열"이 아니라 "객체"임
-};
+export interface SymbolItems {
+  label?: string;
+  skills?: string[];
+  items?: {
+    [key: string]: SymbolItem;
+  };
+}
+export interface SymbolData {
+  frontend: SymbolItems;
+  backend: SymbolItems;
+  database: SymbolItems;
+  devops: SymbolItems;
+  tools: SymbolItems;
+}
