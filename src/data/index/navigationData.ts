@@ -1,4 +1,4 @@
-import { NavigationItems } from '@/types/header';
+import { NavigationItems } from '@/types/index';
 
 export const navigationData: NavigationItems[] = [
   { title: 'Home', path: '/' },

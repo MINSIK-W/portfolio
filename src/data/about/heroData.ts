@@ -1,4 +1,4 @@
-import { heroItems } from '@/types/hero';
+import { heroItems } from '@/types/about';
 
 export const heroData: heroItems[] = [
   {
@@ -8,7 +8,7 @@ export const heroData: heroItems[] = [
     militaryService: '육군, 병장, 만기제대',
     cellPhone: '+82 - 10 - **** - 5100',
     eMail: '****@icloud.com',
-    introduction:
+    intro:
       '웹 퍼블리셔로 IT업계에 첫 발을 디디고 웹에 대해 흥미를 느껴 지속적으로 꾸준히 IT업계의 길을 걷고 있습니다.\n' +
       '디자인이 설계도면이라면 마크업은 건물의 기초공사와 같다고 생각합니다.\n' +
       '마크업을 어떻게 효율적으로 구조화 할 지 숙고하고, 단지 화면에 잘 보여지는 것 뿐만 아니라 얼마나 시맨틱하고,\n' +
