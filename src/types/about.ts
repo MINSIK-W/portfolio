@@ -5,5 +5,5 @@ export interface heroItems {
   militaryService: string;
   cellPhone: string;
   eMail: string;
-  introduction: string;
+  intro: string;
 }
