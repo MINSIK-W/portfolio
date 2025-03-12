@@ -1,9 +1,10 @@
-import { SymbolItems } from '@/types/symbol';
+import { StackSymbolItems } from '@/types/symbol';
 import Express from '@/components/ui/symbol/Express';
 import Php from '@/components/ui/symbol/Php';
 import Nodes from '@/components/ui/symbol/Nodes';
 
-export const BackEndSymbolData: SymbolItems = {
+export const BackEndSymbolData: StackSymbolItems = {
+  type: 'stack',
   label: 'Back-end',
   items: {
     php: {

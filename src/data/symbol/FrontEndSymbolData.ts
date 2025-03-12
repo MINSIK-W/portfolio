@@ -1,4 +1,4 @@
-import { SymbolItems } from '@/types/symbol';
+import { StackSymbolItems } from '@/types/symbol';
 import Html from '@/components/ui/symbol/Html';
 import Css from '@/components/ui/symbol/Css';
 import Javascript from '@/components/ui/symbol/Javascript';
@@ -13,7 +13,8 @@ import Vue from '@/components/ui/symbol/Vue';
 import Jquery from '@/components/ui/symbol/Jquery';
 import Redux from '@/components/ui/symbol/Redux';
 
-export const FrontEndSymbolData: SymbolItems = {
+export const FrontEndSymbolData: StackSymbolItems = {
+  type: 'stack',
   label: 'Front-end',
   items: {
     html: {

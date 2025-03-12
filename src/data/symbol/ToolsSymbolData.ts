@@ -1,4 +1,4 @@
-import { SymbolItems } from '@/types/symbol';
+import { StackSymbolItems } from '@/types/symbol';
 import Eslint from '@/components/ui/symbol/Eslint';
 import Figma from '@/components/ui/symbol/Figma';
 import Illustrator from '@/components/ui/symbol/Illustrator';
@@ -12,7 +12,8 @@ import Webstorm from '@/components/ui/symbol/Webstorm';
 import Photoshop from '@/components/ui/symbol/Photoshop';
 import Xd from '@/components/ui/symbol/Xd';
 
-export const ToolsSymbolData: SymbolItems = {
+export const ToolsSymbolData: StackSymbolItems = {
+  type: 'stack',
   label: 'Tools',
   items: {
     eslint: {

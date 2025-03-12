@@ -1,9 +1,10 @@
-import { SymbolItems } from '@/types/symbol';
+import { StackSymbolItems } from '@/types/symbol';
 import Git from '@/components/ui/symbol/Git';
 import Github from '@/components/ui/symbol/Github';
 import Slack from '@/components/ui/symbol/Slack';
 
-export const DevOpsSymbolData: SymbolItems = {
+export const DevOpsSymbolData: StackSymbolItems = {
+  type: 'stack',
   label: 'DevOps',
   items: {
     git: {
