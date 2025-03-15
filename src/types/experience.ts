@@ -1,6 +1,12 @@
+export interface ExperienceInfo {
+  overview: string[]; // 개요
+  achievements: string[]; // 업적
+  technologies: string[]; // 종료 날짜
+  responsibilities: string[]; // 책무
+}
 export interface ExperienceDate {
-  start: string;
-  end: string;
+  start: string; //시작 날짜
+  end: string; // 종료 날짜
 }
 
 export interface ExperienceItem {
@@ -11,5 +17,6 @@ export interface ExperienceItem {
   skill: string[]; // 사용한 기술 ID 목록
   companyUrl: string; // 기업 홈페이지
   companyTime: string; // 근무 시간
+  info: ExperienceInfo[];
   // detailPage?: React.ComponentType<any>; // 세부 페이지
 }
