@@ -9,7 +9,7 @@ export default function Navigation() {
       <ul className="mr-0.5 flex h-full items-center">
         {navigationData.map((item) => (
           <li
-            className={`${pathName === item.path ? '' : ''}text-textColor dark:text-darkTextColor hover:bg-hovColor dark:hover:bg-darkHovColor ml-1 flex cursor-pointer items-center rounded-sm px-2 py-1 duration-300 ease-in`}
+            className={`${pathName === item.path ? 'bg-hovColor hover:bg-bgColor hover:inset-shadow-l2 dark:bg-darkHovColor dark:hover:bg-darkBgColor dark:hover:inset-shadow-d2' : 'text-textColor dark:text-darkTextColor hover:bg-hovColor dark:hover:bg-darkHovColor'} ml-1 flex cursor-pointer items-center rounded-sm px-2 py-1 duration-300 ease-in`}
             key={item.path}
           >
             <Link href={item.path}>{item.title}</Link>
