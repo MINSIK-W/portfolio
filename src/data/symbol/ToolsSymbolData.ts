@@ -11,6 +11,9 @@ import Yarn from '@/components/ui/symbol/Yarn';
 import Webstorm from '@/components/ui/symbol/Webstorm';
 import Photoshop from '@/components/ui/symbol/Photoshop';
 import Xd from '@/components/ui/symbol/Xd';
+import Eclipse from '@/components/ui/symbol/Eclipse';
+import Vscode from '@/components/ui/symbol/Vscode';
+import Atom from '@/components/ui/symbol/Atom';
 
 export const ToolsSymbolData: StackSymbolItems = {
   type: 'stack',
@@ -55,6 +58,21 @@ export const ToolsSymbolData: StackSymbolItems = {
       show: true,
       title: 'IntelliJ IDEA',
       icon: Intellij,
+    },
+    vscode: {
+      show: true,
+      title: 'VS Code',
+      icon: Vscode,
+    },
+    atom: {
+      show: true,
+      title: 'Atom',
+      icon: Atom,
+    },
+    eclipse: {
+      show: false,
+      title: 'Eclipse ',
+      icon: Eclipse,
     },
     figma: {
       show: true,
