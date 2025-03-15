@@ -12,6 +12,7 @@ import Styledcomponents from '@/components/ui/symbol/Styledcomponents';
 import Vue from '@/components/ui/symbol/Vue';
 import Jquery from '@/components/ui/symbol/Jquery';
 import Redux from '@/components/ui/symbol/Redux';
+import JqueryUI from '@/components/ui/symbol/JqueryUI';
 
 export const FrontEndSymbolData: StackSymbolItems = {
   type: 'stack',
@@ -76,6 +77,11 @@ export const FrontEndSymbolData: StackSymbolItems = {
       show: true,
       title: 'jQuery',
       icon: Jquery,
+    },
+    jqueryui: {
+      show: true,
+      title: 'jQuery UI',
+      icon: JqueryUI,
     },
     redux: {
       show: false,
