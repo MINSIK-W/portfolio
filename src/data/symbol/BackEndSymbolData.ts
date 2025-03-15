@@ -3,6 +3,7 @@ import Express from '@/components/ui/symbol/Express';
 import Php from '@/components/ui/symbol/Php';
 import Nodes from '@/components/ui/symbol/Nodes';
 import Java from '@/components/ui/symbol/Java';
+import Python from '@/components/ui/symbol/Python';
 
 export const BackEndSymbolData: StackSymbolItems = {
   type: 'stack',
@@ -27,6 +28,11 @@ export const BackEndSymbolData: StackSymbolItems = {
       show: false,
       title: 'Java',
       icon: Java,
+    },
+    python: {
+      show: false,
+      title: 'Python',
+      icon: Python,
     },
   },
 };

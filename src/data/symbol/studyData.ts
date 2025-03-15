@@ -8,5 +8,5 @@ export const LearningData: StudySymbolItems = {
 export const FavoritesData: StudySymbolItems = {
   type: 'study',
   label: 'Favorites',
-  stack: [],
+  stack: ['python'],
 };
