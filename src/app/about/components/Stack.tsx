@@ -108,12 +108,12 @@ export default function Stack() {
               : learningMessage()
             : isStudyCategory(activeData)
               ? // 학습
-                activeData.skills.length === 0 // 빈 배열 체크
+                activeData.stack.length === 0 // 빈 배열 체크
                 ? learningMessage()
-                : activeData.skills
-                    .map((skillId) => {
-                      const item = findSymbolItem(symbolData, skillId);
-                      return item ? renderItem(skillId, item) : null;
+                : activeData.stack
+                    .map((stack) => {
+                      const item = findSymbolItem(symbolData, stack);
+                      return item ? renderItem(stack, item) : null;
                     })
                     .filter(Boolean) // null 제거
               : null}
