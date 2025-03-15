@@ -6,11 +6,11 @@ interface AboutLayoutProps {
 }
 export default function AboutLayout({ children }: AboutLayoutProps) {
   return (
-    <section className="relative grid grid-cols-12 gap-4">
-      <div className="bg-bgColor dark:bg-darkBgColor sticky col-span-2">
+    <section className="bg-bgColor2 dark:bg-darkBgColor2 relative grid grid-cols-12 gap-4">
+      <div className="bg-bgColor dark:bg-darkBgColor col-span-2">
         <Hero />
       </div>
-      <div className="col-span-10">{children}</div>
+      <div className="col-span-10 mx-auto w-2/4 py-8">{children}</div>
     </section>
   );
 }
