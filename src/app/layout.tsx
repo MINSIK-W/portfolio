@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`absolute h-full w-full`}>
+      <body data-theme="dark" className={`absolute h-full w-full`}>
         <ThemeProvider>
           <div className={`flex min-w-[480px] flex-col overflow-hidden`}>
             <Header />
