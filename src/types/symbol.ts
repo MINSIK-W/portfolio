@@ -31,7 +31,7 @@ export interface StackSymbolItems {
 export interface StudySymbolItems {
   type: 'study'; // 타입 구분
   label: string; // 이름
-  skills: string[]; // 참조할 기술 ID 목록
+  stack: string[]; // 참조할 기술 ID 목록
 }
 
 // 유니온 타입
