@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '@/app/about/components/Hero';
+import Hero from '@/app/(main)/about/components/Hero';
 
 interface AboutLayoutProps {
   children: React.ReactNode;

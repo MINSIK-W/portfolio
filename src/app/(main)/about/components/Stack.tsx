@@ -44,9 +44,9 @@ export default function Stack() {
     categories.find((category) => category.label === activeCategory) || categories[0];
 
   // 렌더링
-  const renderItem = (key: string, item: BaseSymbolItem) => {
+  const renderItem = (key: string, item: BaseSymbolItem, ignoreShowProperty = false) => {
     const { title, icon: Icon, show } = item;
-    if (!show) return null;
+    if (!show && !ignoreShowProperty) return null;
     return (
       <li
         key={key}
@@ -113,7 +113,8 @@ export default function Stack() {
                 : activeData.stack
                     .map((stack) => {
                       const item = findSymbolItem(symbolData, stack);
-                      return item ? renderItem(stack, item) : null;
+                      // 학습 카테고리에서는 show 속성을 무시하고 항상 렌더링
+                      return item ? renderItem(stack, item, true) : null;
                     })
                     .filter(Boolean) // null 제거
               : null}

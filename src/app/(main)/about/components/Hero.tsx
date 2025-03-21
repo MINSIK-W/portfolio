@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HeroImages from '../../../../public/images/HeroImages.png';
+import HeroImages from '../../../../../public/images/HeroImages.png';
 import Person from '@/components/ui/icon/Person';
 import { heroData } from '@/data/about/heroData';
 import Calendar from '@/components/ui/icon/Calendar';
