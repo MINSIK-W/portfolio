@@ -1,8 +1,4 @@
-import { NavigationItems } from '@/types/index';
-import Calendar from '@/components/ui/icon/Calendar';
-import Home from '@/components/ui/icon/Home';
-import Moon from '@/components/ui/icon/Moon';
-import Sun from '@/components/ui/icon/Sun';
+import { NavigationItems } from '@/types';
 import Book from '@/components/ui/icon/Book';
 import Works from '@/components/ui/icon/Works';
 import Components from '@/components/ui/icon/Components';
@@ -13,12 +9,12 @@ export const navigationData: NavigationItems[] = [
   { title: 'About', path: '/about' },
   {
     title: 'Project',
-    path: '/project',
+    path: '/project/content/works',
     subItems: [
       { icon: Works, title: 'Works', path: '/project/content/works' },
-      { icon: Stack, title: 'Side Project', path: '/project/sideProject' },
-      { icon: Components, title: 'Components', path: '/project/components' },
-      { icon: Book, title: 'Blog', path: '/project/blog' },
+      { icon: Stack, title: 'Side Project', path: '/project/content/sideproject' },
+      { icon: Components, title: 'Components', path: '/project/content/components' },
+      { icon: Book, title: 'Blog', path: '/project/content/blog' },
     ],
   },
   { title: 'Contact', path: '/contact' },
