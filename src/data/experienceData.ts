@@ -1,4 +1,11 @@
 import { ExperienceItem } from '@/types/experience';
+import AppRegistration from '@/components/ui/icon/project/AppRegistration';
+import UserCog from '@/components/ui/icon/project/UserCog';
+import UserPlus from '@/components/ui/icon/project/UserPlus';
+import Devices from '@/components/ui/icon/project/Devices';
+import NotificationsActive from '@/components/ui/icon/project/NotificationsActive';
+import LaptopCode from '@/components/ui/icon/project/LaptopCode';
+import BrowserCheck from '@/components/ui/icon/project/BrowserCheck';
 export const experienceData: ExperienceItem[] = [
   {
     title: '(주)씨엠엑스',
@@ -49,6 +56,28 @@ export const experienceData: ExperienceItem[] = [
         ],
       },
     ],
+    project: [
+      {
+        icon: AppRegistration,
+        title: '신규 앱 콘보 제작',
+        content: '기존 아키엠/콘업 기반으로 신규 앱 UX/UI 기획 및 개발',
+      },
+      {
+        icon: Devices,
+        title: '아키엠/콘업 리뉴얼',
+        content: '신규 콘보 UX/UI 기반으로 기존 서비스 전면 리뉴얼 진행',
+      },
+      {
+        icon: UserCog,
+        title: '관리자 페이지 개선',
+        content: '내부 관리자 페이지 리뉴얼 및 사용성 개선 작업 진행',
+      },
+      {
+        icon: UserPlus,
+        title: '아키엠 친구초대',
+        content: '신규 친구초대 페이지 기획 및 개발 구현',
+      },
+    ],
   },
   {
     title: '(주)시대고시기획시대교육',
@@ -91,6 +120,28 @@ export const experienceData: ExperienceItem[] = [
         ],
       },
     ],
+    project: [
+      {
+        icon: Devices,
+        title: '시대고시 주문서 리뉴얼',
+        content: '결제 프로세스 단계 간소화, 쿠폰 및 적립금 시스템 개선을 통한 사용자 경험 향상',
+      },
+      {
+        icon: Devices,
+        title: 'PC/Mobile 메인 리뉴얼',
+        content: '시대고시 PC와 모바일 메인 페이지 전면 리뉴얼을 통한 사용자 인터페이스 개선',
+      },
+      {
+        icon: Devices,
+        title: 'WIN 시대로 리뉴얼',
+        content: 'AI 면접 관련 페이지를 반응형으로 리뉴얼 및 지속적인 유지보수 진행',
+      },
+      {
+        icon: NotificationsActive,
+        title: '푸시 알림 시스템',
+        content: 'PC/모바일 회원가입 및 마이페이지 알림 발송 설정 기능 구현',
+      },
+    ],
   },
   {
     title: '(유)지니집코리아',
@@ -129,6 +180,28 @@ export const experienceData: ExperienceItem[] = [
           '코드 품질 개선 및 문서화',
           '반응형 웹 디자인 구현',
         ],
+      },
+    ],
+    project: [
+      {
+        icon: LaptopCode,
+        title: '코드 리팩토링',
+        content: '레거시 코드 개선 및 성능 최적화를 통한 웹사이트 품질 향상',
+      },
+      {
+        icon: Devices,
+        title: '서브페이지 리뉴얼',
+        content: '다수의 서브페이지 디자인 개선 및 사용자 경험 최적화',
+      },
+      {
+        icon: LaptopCode,
+        title: '웹 표준화 작업',
+        content: '웹 표준 및 접근성 가이드라인에 맞춘 마크업 구조 개선',
+      },
+      {
+        icon: BrowserCheck,
+        title: 'UI/UX 개선',
+        content: '사용자 중심의 인터페이스 개선 및 반응형 디자인 구현',
       },
     ],
   },
@@ -171,6 +244,28 @@ export const experienceData: ExperienceItem[] = [
         ],
       },
     ],
+    project: [
+      {
+        icon: Devices,
+        title: '코튼푸드 B2C 사이트',
+        content: 'B2C 메인페이지 및 서브페이지 전체 리뉴얼 구축',
+      },
+      {
+        icon: Devices,
+        title: '소평닷컴 B2B 사이트',
+        content: 'B2B 메인페이지 리뉴얼 및 서브페이지 제작',
+      },
+      {
+        icon: Devices,
+        title: '브랜드 소개 페이지',
+        content: '반응형 형식의 브랜드 소개 웹사이트 구축',
+      },
+      {
+        icon: BrowserCheck,
+        title: '크로스 브라우징 최적화',
+        content: '다양한 브라우저 환경에서의 일관된 사용자 경험 제공',
+      },
+    ],
   },
   {
     title: '(주)루미스코리아',
@@ -202,6 +297,28 @@ export const experienceData: ExperienceItem[] = [
           '크로스 브라우징 호환성 검증',
           '지속적인 유지보수 및 개선',
         ],
+      },
+    ],
+    project: [
+      {
+        icon: Devices,
+        title: '홈 서비스 웹사이트',
+        content: '워드프레스 기반 반응형 홈서비스 페이지 구축 및 운영',
+      },
+      {
+        icon: Devices,
+        title: '자사 홈페이지 리뉴얼',
+        content: '기업 홈페이지 전면 리뉴얼 프로젝트 수행',
+      },
+      {
+        icon: Devices,
+        title: '워드프레스 커스터마이징',
+        content: '워드프레스 테마 및 플러그인 커스터마이징을 통한 기능 확장',
+      },
+      {
+        icon: BrowserCheck,
+        title: '반응형 웹 최적화',
+        content: '다양한 디바이스에서의 최적화된 사용자 경험 제공',
       },
     ],
   },
@@ -242,6 +359,28 @@ export const experienceData: ExperienceItem[] = [
           '디자인 페이지 퍼블리싱',
           '서브페이지 구축 및 최적화',
         ],
+      },
+    ],
+    project: [
+      {
+        icon: Devices,
+        title: '아마플랙스코리아',
+        content: 'B2C 홈페이지 구축, 회원가입 및 게시판 시스템 개발',
+      },
+      {
+        icon: Devices,
+        title: '라이트범',
+        content: 'PC 최적화 B2C 홈페이지 구축 프로젝트',
+      },
+      {
+        icon: Devices,
+        title: '대웅제약',
+        content: 'B2B 홈페이지 리뉴얼 프로젝트 수행',
+      },
+      {
+        icon: Devices,
+        title: '스쿨N',
+        content: 'B2C 홈페이지 메인 및 서브페이지 구축',
       },
     ],
   },
