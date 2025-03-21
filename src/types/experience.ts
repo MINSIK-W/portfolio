@@ -1,3 +1,10 @@
+import React from 'react';
+
+export interface ExperienceProject {
+  icon: React.ComponentType<any>;
+  title: string;
+  content: string;
+}
 export interface ExperienceInfo {
   overview: string[]; // 개요
   achievements: string[]; // 업적
@@ -18,5 +25,6 @@ export interface ExperienceItem {
   companyUrl: string; // 기업 홈페이지
   companyTime: string; // 근무 시간
   info: ExperienceInfo[];
+  project: ExperienceProject[];
   // detailPage?: React.ComponentType<any>; // 세부 페이지
 }
