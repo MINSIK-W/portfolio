@@ -10,7 +10,7 @@ export default function ProjectLayout({ children }: AboutLayoutProps) {
     <section className="bg-bgColor2 dark:bg-darkBgColor2 relative h-full">
       <Header />
 
-      <div className="flex h-[calc(100vh-112px)]">
+      <div className="flex h-[calc(100vh-125px)]">
         <div className="border-bgColor4 dark:border-darkBgColor4 bg-bgColor dark:bg-darkBgColor w-20 border-r">
           <Navigation />
         </div>
