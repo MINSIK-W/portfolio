@@ -15,7 +15,7 @@ export const sideProjectsData: SideProjectItem[] = [
     toggle: [{ switch: true, date: 2025 }],
     path: 'NextJS_Portfolio',
     pathLive: '',
-    githubUrl: 'https://github.com/example/chat-app',
+    githubUrl: 'https://github.com/MINSIK-W/portfolio',
     title: 'Next.js Portfolio',
     note: [
       'NextJS, React, TypeScript로 구축된 포트폴리오 애플리케이션으로, 제 업무 경험과 학습한 프로젝트 및 구성 요소를 보여줍니다.',
