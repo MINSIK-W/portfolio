@@ -12,8 +12,12 @@ export function generateStaticParams() {
     slug: project.path,
   }));
 }
-
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+export default function ProjectPage({ params }: PageProps) {
   const slug = params.slug;
   const project = sideProjectsData.find((p) => p.path === slug);
 
