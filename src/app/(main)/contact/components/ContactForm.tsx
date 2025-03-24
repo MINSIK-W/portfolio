@@ -35,12 +35,12 @@ export default function ContactForm() {
   };
   return (
     <>
-      <section className="z-10 mx-auto mt-10 w-full max-w-md">
-        <h2 className="text-textColor dark:text-darkTextColor font-roboto relative mb-7 text-center text-6xl">
+      <section className="z-10 mx-auto mt-24 w-full max-w-md">
+        <h2 className="text-textColor dark:text-darkTextColor font-roboto relative mb-8 text-center text-6xl">
           CONTACT ME
         </h2>
         {banner && <ContactMessage banner={banner} />}
-        <div className="bg-bgColor dark:bg-darkBgColor inset-shadow-l2 dark:inset-shadow-d2 text-textColor dark:text-darkTextColor h-4/6 overflow-y-auto rounded-md p-6">
+        <div className="bg-bgColor dark:bg-darkBgColor inset-shadow-l2 dark:inset-shadow-d2 text-textColor dark:text-darkTextColor h-3/4 overflow-y-auto rounded-md px-6 py-9">
           <form className="flex flex-col gap-5" autoComplete="off" onSubmit={onSubmit}>
             <div className="flex flex-col gap-1">
               <label className="font-rajdhani text-lg" htmlFor="from">
