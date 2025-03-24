@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ThemeContext } from '@/components/Theme';
+import { ThemeContext } from '@/components/ThemeProvider';
 
 // ThemeProvider 컨텍스트를 쉽게 사용하기 위한 커스텀 훅
 export function useTheme() {

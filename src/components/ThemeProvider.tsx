@@ -2,11 +2,11 @@
 
 import React, { createContext, useEffect, useState } from 'react';
 
-type Theme = 'light' | 'dark'; // 사용할 테마 타입 정의
+type ThemeProvider = 'light' | 'dark'; // 사용할 테마 타입 정의
 
 // 테마 컨텍스트 타입 정의
 type ThemeContextType = {
-  theme: Theme; // 현재 테마 상태
+  theme: ThemeProvider; // 현재 테마 상태
   toggleTheme: () => void; // 테마 변경 함수
 };
 
@@ -15,11 +15,11 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(undefine
 
 // ThemeProvider 컴포넌트: 테마 상태를 관리하고 하위 컴포넌트에 제공
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('dark'); // 기본 테마 설정
+  const [theme, setTheme] = useState<ThemeProvider>('dark'); // 기본 테마 설정
 
   useEffect(() => {
     // 테마가 localStorage에 저장되어 있는지 확인하고, 있다면 해당 테마로 설정
-    const savedTheme = localStorage.getItem('theme') as Theme;
+    const savedTheme = localStorage.getItem('theme') as ThemeProvider;
     if (savedTheme) {
       setTheme(savedTheme);
       document.body.dataset.theme = savedTheme; // body 태그에 data-theme 속성 추가
