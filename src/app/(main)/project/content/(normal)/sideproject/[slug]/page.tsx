@@ -13,8 +13,11 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = sideProjectsData.find((p) => p.path === params.slug);
+export default async function ProjectPage({ params }: { params: { slug: string } }) {
+  const resolvedParams = await (params as any);
+  const slug = resolvedParams.slug;
+  const project = sideProjectsData.find((p) => p.path === slug);
+
   if (!project) {
     notFound();
   }
