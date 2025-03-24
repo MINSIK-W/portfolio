@@ -12,13 +12,13 @@ export function generateStaticParams() {
     slug: project.path,
   }));
 }
-interface PageProps {
-  params: {
+type Props = {
+  params: Promise<{
     slug: string;
-  };
-}
-export default function ProjectPage({ params }: PageProps) {
-  const slug = params.slug;
+  }>;
+};
+export default async function ProjectPage({ params }: Props) {
+  const { slug } = await params;
   const project = sideProjectsData.find((p) => p.path === slug);
 
   if (!project) {
