@@ -43,9 +43,9 @@ export const sideProjectsData: SideProjectItem[] = [
         detail: 'Works, Side Projects, Components, Blog 등 게시물을 손쉽게 탐색할 수 있습니다.',
       },
       {
-        title: '반응형 디자인',
+        title: '라이트 모드 지원',
         icon: Number2,
-        detail: '모든 장치에서 최적화된 보기 경험을 제공합니다.',
+        detail: '라이트 모드와 다크 모드 간 전환을 위한 테마 스위처를 추가합니다.',
       },
       {
         title: '컴포넌트 모음',
@@ -66,9 +66,9 @@ export const sideProjectsData: SideProjectItem[] = [
     ],
     improvement: [
       {
-        title: '라이트 모드 지원',
+        title: '반응형 디자인',
         icon: CircleNumber1,
-        detail: '라이트 모드와 다크 모드 간 전환을 위한 테마 스위처를 추가합니다.',
+        detail: '모든 장치에서 최적화된 보기 경험을 제공합니다.',
       },
       {
         title: '필터링 및 검색',
