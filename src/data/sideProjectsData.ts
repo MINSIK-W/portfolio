@@ -82,4 +82,48 @@ export const sideProjectsData: SideProjectItem[] = [
       },
     ],
   },
+  {
+    exposure: true,
+    toggle: [{ switch: true, date: 2025 }],
+    path: 'SemanticMarkup',
+    pathLive: 'https://minsik-w.github.io/Semantic-Markup_1/',
+    githubUrl: 'https://github.com/MINSIK-W/Semantic-Markup_1',
+    title: 'Next.js Portfolio',
+    note: ['순수 HTML5 와 CSS3 로만 만들어진 시멘틱 마크업 페이지입니다.'],
+    intro: [
+      {
+        details: [
+          { title: '기간', icon: Clock, detail: '1일' },
+          { title: '팀 규모', icon: Person, detail: '개인 프로젝트' },
+          { title: '유형', icon: Stack, detail: '포트폴리오' },
+        ],
+        description: [
+          '이 프로젝트는 HTML5와 CSS3의 기초부터 구성 원칙까지 철저히 반영한 시멘틱 구조를 구현한 작업입니다.',
+          'CSS는 모듈화 방식으로 reset, colors, typography, layout, style, animation, responsive 등 총 7개의 파일로 분리하여 main.css 에 import 하였습니다.',
+          '접근성과 유지보수성을 높이기 위한 시멘틱 태그와 구조적 설계, 그리고 반응형 웹 구현까지 고려하여 작업하였습니다.',
+        ],
+      },
+    ],
+    technologies: ['html', 'css'],
+    features: [
+      {
+        title: '시멘틱 구조',
+        icon: Number1,
+        detail:
+          'header, main, section, footer 등 HTML5 시멘틱 태그 기반으로 구성되어 의미 있는 마크업 구조를 제공합니다.',
+      },
+      {
+        title: '모듈형 CSS 설계',
+        icon: Number2,
+        detail:
+          'CSS를 기능별로 나누어 reset, layout, colors, typography, animations 등으로 분리하여 유지보수와 확장성을 확보했습니다.',
+      },
+      {
+        title: '반응형 레이아웃',
+        icon: Number3,
+        detail:
+          'responsive.css를 통해 다양한 해상도(480px, 768px, 1024px, 1280px 이상)에 대응하도록 설계되었습니다.',
+      },
+    ],
+  },
 ];

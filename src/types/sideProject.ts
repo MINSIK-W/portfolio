@@ -27,7 +27,7 @@ export interface SideProjectItem {
   technologies: string[];
   githubUrl: string;
   features: SideProjectDetail[];
-  challenges: string[];
-  learnings: string[];
-  improvement: SideProjectDetail[];
+  challenges?: string[];
+  learnings?: string[];
+  improvement?: SideProjectDetail[];
 }
