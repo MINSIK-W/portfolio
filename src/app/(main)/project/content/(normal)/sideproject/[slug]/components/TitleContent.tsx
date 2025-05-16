@@ -44,7 +44,7 @@ export default function TitleContent({
             <span>{githubItem && githubItem.title}</span>
           </Link>
           <Link
-            href={`/${pathLive}`}
+            href={pathLive}
             target="_blank"
             rel="noopener noreferrer"
             className="text-White hover:inset-shadow-l2 dark:hover:inset-shadow-d2 bg-Red flex items-center gap-2 rounded-sm px-4 py-2 transition-all"
