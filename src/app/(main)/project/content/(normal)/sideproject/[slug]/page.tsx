@@ -37,8 +37,13 @@ export default async function ProjectPage({ params }: Props) {
       <ProjectOutline intro={project.intro} />
       <Technologies technologies={project.technologies} />
       <MainFunction features={project.features} />
-      <ChallengeAndExcellence challenges={project.challenges} learnings={project.learnings} />
-      <FutureImprovement improvement={project.improvement} />
+      {project.challenges || project.learnings ? (
+        <ChallengeAndExcellence
+          challenges={project.challenges || []}
+          learnings={project.learnings || []}
+        />
+      ) : null}
+      {project.improvement ? <FutureImprovement improvement={project.improvement || []} /> : null}
     </div>
   );
 }

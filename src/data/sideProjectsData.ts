@@ -88,7 +88,7 @@ export const sideProjectsData: SideProjectItem[] = [
     path: 'SemanticMarkup',
     pathLive: 'https://minsik-w.github.io/Semantic-Markup_1/',
     githubUrl: 'https://github.com/MINSIK-W/Semantic-Markup_1',
-    title: 'Next.js Portfolio',
+    title: 'Semantic Markup',
     note: ['순수 HTML5 와 CSS3 로만 만들어진 시멘틱 마크업 페이지입니다.'],
     intro: [
       {
